@@ -20,7 +20,7 @@ public class InMemoryGameRepository implements GameRepository {
     @Override
     public List<Game> findAll() {
         List<Game> games = new ArrayList<>(storage.values());
-        games.sort(Comparator.comparing(Game::getId)); // стабільний порядок у відповіді
+        games.sort(Comparator.comparing(Game::getId)); 
         return games;
     }
 

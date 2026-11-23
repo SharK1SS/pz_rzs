@@ -8,8 +8,8 @@ public class Game {
     private String developer;
     private BigDecimal price;
     private Integer releaseYear;
-    private String coverUrl;       // обкладинка (для картки)
-    private String description;    // опис (для сторінки гри)
+    private String coverUrl;
+    private String description;
     private String genre;
 
     public Game() {

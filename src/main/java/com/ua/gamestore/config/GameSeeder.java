@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
-/** Початкове наповнення сховища, поки немає POST-ендпоінта. */
 @Component
 public class GameSeeder implements ApplicationRunner {
 
@@ -20,25 +19,25 @@ public class GameSeeder implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
-        repository.save(new Game(null, "The Witcher 3: Wild Hunt", "CD Projekt RED",
-                new BigDecimal("599.00"), 2015, "/covers/witcher3.jpg",
-                "Рольова гра з відкритим світом: мисливець на монстрів Геральт шукає прийомну доньку.",
-                "RPG"));
-        repository.save(new Game(null, "Stardew Valley", "ConcernedApe",
-                new BigDecimal("249.00"), 2016, "/covers/stardew-valley.jpg",
-                "Симулятор ферми: обробляйте землю, розводьте тварин, знайомтеся з мешканцями містечка.",
-                "Симулятор"));
-        repository.save(new Game(null, "Hades", "Supergiant Games",
-                new BigDecimal("399.00"), 2020, "/covers/hades.jpg",
-                "Динамічний roguelike: вирвіться з підземного царства, щоразу ставши сильнішим.",
-                "Roguelike"));
+        repository.save(new Game(null, "Iratus: Lord of the Dead", "Unfrozen",
+                new BigDecimal("349.00"), 2020, "/covers/iratus.jpg",
+                "Тактична рольова гра: некромант Іратус збирає армію нежиті та веде її проти хрестоносців.",
+                "Тактична RPG"));
         repository.save(new Game(null, "Factorio", "Wube Software",
                 new BigDecimal("450.00"), 2020, "/covers/factorio.jpg",
                 "Побудуйте та автоматизуйте виробництво, оптимізуючи логістику та ресурси.",
-                "Стратегія"));
-        repository.save(new Game(null, "Portal 2", "Valve",
-                new BigDecimal("199.00"), 2011, "/covers/portal2.jpg",
-                "Головоломка від першої особи з портальною гарматою та кооперативним режимом.",
+                "Автоматизація"));
+        repository.save(new Game(null, "Into the Breach", "Subset Games",
+                new BigDecimal("299.00"), 2018, "/covers/into-the-breach.jpg",
+                "Покрокова тактика на крихітних картах: захищайте міста від прибульців, плануючи кожен хід.",
+                "Тактика"));
+        repository.save(new Game(null, "Slay the Spire", "Mega Crit Games",
+                new BigDecimal("349.00"), 2019, "/covers/slay-the-spire.jpg",
+                "Roguelike з побудовою колоди: підіймайтеся на вежу, комбінуючи карти та реліквії.",
+                "Roguelike"));
+        repository.save(new Game(null, "Opus Magnum", "Zachtronics",
+                new BigDecimal("279.00"), 2017, "/covers/opus-magnum.jpg",
+                "Головоломка про алхімічні машини: проєктуйте механізми, оптимізуючи вартість і швидкість.",
                 "Головоломка"));
     }
 }
