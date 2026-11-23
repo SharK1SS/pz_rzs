@@ -5,7 +5,7 @@ Spring Boot 3.4.x · Java 21 · Maven.
 
 ## Запуск
 ```bash
-./mvnw spring-boot:run      # або: mvn spring-boot:run
+./mvnd spring-boot:run      # або: mvnd spring-boot:run
 ```
 
 ## Ендпоінти
